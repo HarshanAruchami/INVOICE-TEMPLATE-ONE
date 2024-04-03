@@ -19,7 +19,7 @@
   <div style="
         width: 100%;
         position: relative;
-        height: 842px;
+        height: 842px; 
         text-align: right;
         font-size: 12px;
         color: #fff;
@@ -51,7 +51,7 @@
             gap: 22px;
           ">
         <div style="width: 595px; position: relative; height: 86px">
-          <div class="color-picker" style="
+          <div id="headerElementOne" #headerElementOne class="headerColorPickerTwo" style="
                 position: absolute;
                 top: 0px;
                 left: 0px;
@@ -66,7 +66,7 @@
                 width: 298px;
                 height: 86px;
               ">
-            <div style="
+            <div id="headerElementTwo" #headerElementTwo class="headerColorPickerTwo" style="
                   position: absolute;
                   top: 0px;
                   right: 0px;
@@ -195,7 +195,7 @@
                       ">
                     <b style="position: relative; line-height: 15px">Invoice No:</b>
                   </div>
-                  <div style="
+                  <div id="invNo" #invNo style="
                         width: 54px;
                         position: relative;
                         font-size: 10px;
@@ -226,7 +226,7 @@
                       ">
                     <b style="position: relative; line-height: 15px">Reference No:</b>
                   </div>
-                  <div style="
+                  <div id="refNo" #refNo style="
                         position: relative;
                         font-size: 10px;
                         line-height: 15px;
@@ -252,7 +252,7 @@
                       ">
                     <b style="position: relative; line-height: 15px">Date:</b>
                   </div>
-                  <div style="
+                  <div id="currentDate" #currentDate style="
                         position: relative;
                         font-size: 10px;
                         line-height: 15px;
@@ -278,7 +278,7 @@
                       ">
                     <b style="position: relative; line-height: 15px">Due Date:</b>
                   </div>
-                  <div style="
+                  <div id="dueDate" #dueDate style="
                         position: relative;
                         font-size: 10px;
                         line-height: 15px;
@@ -302,9 +302,9 @@
                         justify-content: flex-start;
                         padding: 0px 0px 0.1px;
                       ">
-                    <b style="position: relative; line-height: 15px">Payment Terms:</b>
+                    <b id="paymentTerms" #paymentTerms style="position: relative; line-height: 15px">Payment Terms:</b>
                   </div>
-                  <div style="
+                  <div id="paymentTermsValue" #paymentTermsValue style="
                         position: relative;
                         font-size: 10px;
                         line-height: 15px;
@@ -329,7 +329,7 @@
                     align-items: flex-start;
                     justify-content: center;
                   ">
-                <b style="
+                <b id="billTo" #billTo style="
                       align-self: stretch;
                       position: relative;
                       line-height: 22px;
@@ -338,7 +338,7 @@
                       height: 27px;
                       flex-shrink: 0;
                     ">Bill To:</b>
-                <b style="
+                <b id="billToName" #billToName style="
                       align-self: stretch;
                       position: relative;
                       font-size: 18px;
@@ -348,7 +348,7 @@
                       height: 23px;
                       flex-shrink: 0;
                     ">Name Surname</b>
-                <div style="
+                <div id="billToAddress" #billToAddress style="
                       width: 100%;
                       position: relative;
                       font-size: 10px;
@@ -371,7 +371,7 @@
                     align-items: flex-start;
                     justify-content: center;
                   ">
-                <b style="
+                <b id="shipTo" #shipTo style="
                       align-self: stretch;
                       position: relative;
                       line-height: 22px;
@@ -379,8 +379,8 @@
                       align-items: center;
                       height: 27px;
                       flex-shrink: 0;
-                    ">Bill To:</b>
-                <b style="
+                    ">Ship To:</b>
+                <b id="shipToName" #shipToName style="
                       align-self: stretch;
                       position: relative;
                       font-size: 18px;
@@ -390,7 +390,7 @@
                       height: 23px;
                       flex-shrink: 0;
                     ">Name Surname</b>
-                <div style="
+                <div id="shipToAddress" #shipToAddress style="
                       width: 100%;
                       position: relative;
                       font-size: 10px;
@@ -417,146 +417,42 @@
                 font-size: 12px;
                 color: #fff;
               ">
+            <!-- Table -->
             <div style="
                   display: flex;
                   flex-direction: column;
                   align-items: center;
-                  justify-content: flex-start;
+                  justify-content:stretch;
+                  width: 100%;
                 ">
-              <div style="
-                    width: 535px;
-                    background-color: #242437;
-                    height: 26px;
-                    overflow: hidden;
-                    flex-shrink: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    padding: 0px 10px;
-                    box-sizing: border-box;
-                    min-width: 535px;
-                  ">
-                <div style="
-                      align-self: stretch;
-                      flex: 1;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: space-between;
-                    ">
-                  <b style="position: relative; line-height: 15px">Item</b>
-                  <div style="
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: flex-end;
-                        gap: 70px;
-                      ">
-                    <div style="
-                          width: 145px;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: center;
-                          justify-content: flex-start;
-                          gap: 44px;
-                        ">
-                      <b style="position: relative; line-height: 15px">Quantity</b>
-                      <b style="position: relative; line-height: 15px">Rate</b>
-                    </div>
-                    <b style="
-                          position: relative;
-                          line-height: 15px;
-                          text-align: right;
-                        ">Amount</b>
-                  </div>
-                </div>
-              </div>
-              <div style="
-                    width: 535px;
-                    background-color: #d9d9d9;
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    font-size: 10px;
-                  ">
-                <div class="color-picker" style="
-                      width: 268px;
-                      background-color: #7539ff;
-                      overflow: hidden;
-                      flex-shrink: 0;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: flex-start;
-                      padding: 6px 15px 6px 10px;
-                      box-sizing: border-box;
-                    ">
-                  <div style="
-                        width: 240px;
-                        position: relative;
-                        line-height: 15px;
-                        display: flex;
-                        align-items: center;
-                        flex-shrink: 0;
-                        max-width: 240px;
-                      ">
-                    Description of service or product...
-                  </div>
-                </div>
-                <div class="color-picker" style="
-                      align-self: stretch;
-                      width: 87px;
-                      background-color: #7539ff;
-                      overflow: hidden;
-                      flex-shrink: 0;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: flex-start;
-                      padding: 6px 0px;
-                      box-sizing: border-box;
-                    ">
-                  <div style="position: relative; line-height: 15px">20</div>
-                </div>
-                <div class="color-picker" style="
-                      align-self: stretch;
-                      width: 77px;
-                      background-color: #7539ff;
-                      overflow: hidden;
-                      flex-shrink: 0;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: flex-start;
-                      padding: 6px 0px;
-                      box-sizing: border-box;
-                    ">
-                  <div style="position: relative; line-height: 15px">
-                    $10000000000
-                  </div>
-                </div>
-                <div class="color-picker" style="
-                      align-self: stretch;
-                      width: 103px;
-                      background-color: #7539ff;
-                      overflow: hidden;
-                      flex-shrink: 0;
-                      display: flex;
-                      flex-direction: row;
-                      align-items: center;
-                      justify-content: flex-end;
-                      padding: 6px 8px 6px 0px;
-                      box-sizing: border-box;
-                    ">
-                  <div style="position: relative; line-height: 15px">
-                    $10000000000
-                  </div>
-                </div>
-              </div>
-              
+              <table id="lineItemTable" #lineItemTable
+                style="width: 100%;color:#000; border: 1px solid black; border-collapse: collapse;">
+
+                <thead>
+                  <tr style="color: #fff;background-color: #333333;">
+                    <th style="border: 1px solid black;text-align: center;">
+                      S.No
+                    </th>
+                    <th style="width: 200px; border: 1px solid black;padding-left: .7em;">Item</th>
+                    <th style=" border: 1px solid black;text-align: center;">Quantity</th>
+                    <th style=" border: 1px solid black;text-align: right;padding-right: .7em;">Rate</th>
+                    <th style=" border: 1px solid black;text-align: right;padding-right: .7em;">Amount</th>
+                  </tr>
+                </thead>
+
+                <tbody id="lineItemTableBody" #lineItemTableBody>
+                  <tr id="lineItem" #lineItem style="height: auto; background-color: #EAEAEA; color: #6E6E6E;">
+                    <td style=" border: 1px solid black;text-align: center;">01</td>
+                    <td style=" border: 1px solid black;padding-left: .7em;padding-right: .7em;">Description of service
+                      or
+                      product...</td>
+                    <td style=" border: 1px solid black;text-align: center;">232</td>
+                    <td style=" border: 1px solid black;text-align: right;padding-right: .7em;">$10000000000</td>
+                    <td style=" border: 1px solid black;text-align: right;padding-right: .7em;">$10000000000</td>
+                  </tr>
+                </tbody>
+
+              </table>
             </div>
             <div style="
                   display: flex;
@@ -598,7 +494,7 @@
                           position: relative;
                           line-height: 22px;
                         ">Terms:</b>
-                    <div style="
+                    <div id="terms" #terms style="
                           width: 100%;
                           position: relative;
                           font-size: 10px;
@@ -635,7 +531,7 @@
                           position: relative;
                           line-height: 22px;
                         ">Notes:</b>
-                    <div style="
+                    <div id="notes" #notes style="
                           width: 100%;
                           position: relative;
                           font-size: 10px;
@@ -705,7 +601,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="subTotal" #subTotal style="
                           width: 62px;
                           position: relative;
                           line-height: 15px;
@@ -766,7 +662,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="discount" #discount style="
                           width: 72px;
                           position: relative;
                           line-height: 15px;
@@ -825,7 +721,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="tax" #tax style="
                           flex: 1;
                           position: relative;
                           line-height: 15px;
@@ -882,7 +778,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="shipping" #shipping style="
                           flex: 1;
                           position: relative;
                           line-height: 15px;
@@ -942,7 +838,7 @@
                         text-align: right;
                         font-size: 10px;
                       ">
-                    <div style="
+                    <div id="total" #total style="
                           flex: 1;
                           position: relative;
                           line-height: 15px;
@@ -997,7 +893,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="amountPaid" #amountPaid style="
                           flex: 1;
                           position: relative;
                           line-height: 15px;
@@ -1052,7 +948,7 @@
                         font-size: 10px;
                         color: #6e6e6e;
                       ">
-                    <div style="
+                    <div id="balanceDue" #balanceDue style="
                           flex: 1;
                           position: relative;
                           line-height: 15px;
@@ -1075,7 +971,7 @@
             text-align: left;
             font-size: 10px;
           ">
-        <div class="color-picker" style="
+        <div id="footerElementOne" #footerElementOne class="footerColorPickerOne" style="
               position: absolute;
               top: 86px;
               left: 595px;
@@ -1092,7 +988,7 @@
               width: 298px;
               height: 86px;
             ">
-          <div style="
+          <div id="footerElementTwo" #footerElementTwo class="footerColorPickerTwo" style="
                 position: absolute;
                 top: 86px;
                 right: -298px;
